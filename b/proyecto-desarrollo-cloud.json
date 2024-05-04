@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "proyecto-desarrollo-cloud",
+  "private_key_id": "7239c293b686503b869e0171ff8aa468cf24e1be",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDgtxejWnGeIlTI\nkkT6Isqqi+gn8Gqv/ndfSQLW6hL2ko3PtI/TJRs0WjyembpjKDQECDzfnM9t/22F\n2os1pDUb3vTQjlVVm2kwdHKM1T1ZcDCHm4WJHNB3HhP7kM/rpULD7vPUJD/Kucjn\nPuscibXj5LKEL1QtV5iKTlzBw73xy7N5tWS9WIV99+d+NvI2KQQ6g6lbq4A2sOgG\n4u1cZ7ZlFjciKNDPg7+GPQrCze1AFI1S+9zZLz1ZLk0iWgg450Y0uJool2CWy6C1\ncuQOypdWqYllgAPV5agEvAeTHEziaJloikaSOlbNpa4aGZvWaBNDvV1i2uUGhcI2\n6ELKpqXFAgMBAAECggEAFHHD9kozvRHdidP475L7wlFxQTT31+Q8YxBm8DuilwlV\nWpjQXwLouzYcfsd4tC3Dsbw4IZYILzdGdR+he7NhW5RIzLKuY9f8VXq6s0JxTvJM\nkAHfv849zyCO69vMduF1thLG3z2fCigl9Zf9Vv7WbBHyBeGydF+cUrT3bm+LF/Tn\nOr/LpI5I9HNMf88KElL3Tfk3Z1Z+hwSFmSQrag4S1d1mCm7YXQT9I2v3qnNV7uDc\nIgjN1E9RWd736EO17Zy36YxM2WhK+Ujk53VIYUocYfW023pDoWkt0BxtlNWG1sfe\njzG8L6JkNTtol+2qmG6X4zbX037y+GGsBNigwbVpEQKBgQD+Z+5xfBLZncvcva52\nPmTL33tST7/myu+d6ebhGd1aWfpQSA/UwbmpcZjQqaWKPCnsFm5ROUNzU7V9SJsi\nosIZp0rIQvnLlxE3eOqtM607tTesEIbaDgceCtIYi04SfG3+oFzVXckV5kWvnR2p\n8QfDUUEgUnUhhp001UxQT3esbQKBgQDiH4loUtttoZrWhFuqTPKrmIO9krKb3iG8\n75c77fsBFpWE7KaB0t4Q0y67RZLvXFQe4/AQzeBtCZn3nq77K0CQxdYiipvTqMTb\njqijHQqx/ctOWbZfhyGogxSwUAoB9/LylNCJNgyT5FJTqCTnZOgUnomW7xbvut+g\nRZv22JpXuQKBgQDBwnJuaGsK5w2vT6AiWp72T31jUW383y7kfJLleoeGGuV0Y437\nIpi/Hs+ejLaRtATR1LusjQp8OZMOmk/db0yZsTpZj/kkQChSsXs68xLLWNfP6r5q\nMSjmjqM5IlAR8EbuGUDbGJTgYwNMH0PKfNLGxYnujh67rATrilCXEg85eQKBgQC4\n4bAnbBec+5Tt8CpCg8emJX0RcvA2INjU8dBlX57qtNxrYlKBszd96i07URdiPctJ\ntnSCSNJGVKNeoo/PLP4NYLREabAezs6l9W5Mb2JfRXMFDLTgRkxuyz4PKmIEWgZ5\n8NLQXTDLetMVM1V5HDflI/q7PaEzQUe2czOiEFehgQKBgFoyBSARskRe7GNsA1qU\nPn+x41RfLYEhvtyk/7Xv1v5/zOaDUzKiVh4P3rNY/eNA9hs05LUFfnDHc5fC/gGe\nSq3ZXsFt+NSVmhoOR3i6dr6wR/7zb7fgiET6MJDS+uVF4cCXrqG+XFgLbqThyO6D\nAa5m73oiiq0wgvT50LDeSUzx\n-----END PRIVATE KEY-----\n",
+  "client_email": "subida-bucket@proyecto-desarrollo-cloud.iam.gserviceaccount.com",
+  "client_id": "113226003624838952606",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/subida-bucket%40proyecto-desarrollo-cloud.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
