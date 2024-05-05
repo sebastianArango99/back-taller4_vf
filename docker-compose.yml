@@ -1,26 +1,14 @@
 version: "3.3"
 services:      
-  backend:
+  app:
     build: ./b
-    command: uvicorn api.main:app --host 0.0.0.0 --reload
-    volumes:
-      - .:/app
-      - ./tmp:/app/tmp
+    command: bash -c "uvicorn api.main:app --host 0.0.0.0 --reload & celery -A api.worker worker --loglevel=info"
     ports:
       - "8000:8000"
     depends_on:
       - redis
-
-  redis:
-    image: "redis:alpine"
-    ports:
-      - "6379:6379"
-
-  worker:
-    build: ./b
-    command: celery -A api.worker worker --loglevel=info
     volumes:
       - .:/app
       - ./tmp:/app/tmp
-    depends_on:
-      - redis
+  redis:
+    image: "redis:alpine"
