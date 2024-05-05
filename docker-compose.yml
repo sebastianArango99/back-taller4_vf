@@ -1,23 +1,27 @@
 version: "3.3"
-services:      
-  app:
+services:
+  backend-worker:
     build: ./b
-    command: bash -c "uvicorn api.main:app --host 0.0.0.0 --reload & celery -A api.worker worker --loglevel=info"
+    command: uvicorn api.main:app --host 0.0.0.0 --reload &
+      python /app/api/worker.py
+    volumes:
+      - ./b:/app
     ports:
       - "8000:8000"
-    depends_on:
-      - redis
-    volumes:
-      - .:/app
-      - ./tmp:/app/tmp
-  redis:
-    image: "redis:alpine"
-    volumes:
-      - redis_data:/data
-  worker_volumes:
-    image: busybox
-    volumes:
-      - ./tmp:/app/tmp
+    environment:
+      - GOOGLE_APPLICATION_CREDENTIALS=/app/proyecto-desarrollo-cloud.json
+      - GOOGLE_CLOUD_PROJECT=e2-esc
+      - PUBSUB_TOPIC=projects/e2-dsc/subscriptions/pubsub-sub
+      - PUBSUB_SUBSCRIPTION=projects/e2-dsc/subscriptions/pubsub-sub
 
-volumes:
-  redis_data:
+  # worker:
+  #   build: ./b
+  #   command: python /app/api/worker.py
+  #   volumes:
+  #     - ./b:/app
+  #   environment:
+  #     - GOOGLE_APPLICATION_CREDENTIALS=/app/proyecto-desarrollo-cloud.json
+  #     - GOOGLE_CLOUD_PROJECT=e2-esc
+  #     - PUBSUB_TOPIC=projects/e2-dsc/subscriptions/pubsub-sub
+  #     - PUBSUB_SUBSCRIPTION=projects/e2-dsc/subscriptions/pubsub-sub
+

@@ -5,10 +5,10 @@ from sqlalchemy.orm import declarative_base, sessionmaker
 url = URL.create(
     drivername="postgresql",
     username="postgres",
-    password="vmQymogtcaYpuYqYSQeLZoafBZJAWKNN",
-    host="roundhouse.proxy.rlwy.net",
+    password="MYZSFGObsZxyNfbhHDtMCvovzWtWDzoS",
+    host="monorail.proxy.rlwy.net",
     database="railway",
-    port=19049
+    port=20426
 )
 engine = create_engine(url)
 session = sessionmaker(bind=engine)

@@ -16,6 +16,8 @@ RUN pip install --no-cache-dir poetry && \
 RUN apt-get update && \
     apt-get install -y libreoffice
 
+RUN pip install google-cloud-pubsub && pip install pymysql
+
 # Copy the rest of your application's code to the container
 COPY . /code
 

@@ -10,4 +10,4 @@ class Task(TaskBase):
     id: int
     time_stamp: datetime
     status: str
-    celery_task_id: str
+    pubsub_message_id: str
