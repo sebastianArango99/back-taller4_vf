@@ -1,8 +1,9 @@
 version: "3.3"
 services:
-  backend:
+  backend-worker:
     build: ./b
-    command: uvicorn api.main:app --host 0.0.0.0 --reload
+    command: uvicorn api.main:app --host 0.0.0.0 --reload &
+      python /app/api/worker.py
     volumes:
       - ./b:/app
     ports:
@@ -13,14 +14,14 @@ services:
       - PUBSUB_TOPIC=projects/e2-dsc/subscriptions/pubsub-sub
       - PUBSUB_SUBSCRIPTION=projects/e2-dsc/subscriptions/pubsub-sub
 
-  worker:
-    build: ./b
-    command: python /app/api/worker.py
-    volumes:
-      - ./b:/app
-    environment:
-      - GOOGLE_APPLICATION_CREDENTIALS=/app/proyecto-desarrollo-cloud.json
-      - GOOGLE_CLOUD_PROJECT=e2-esc
-      - PUBSUB_TOPIC=projects/e2-dsc/subscriptions/pubsub-sub
-      - PUBSUB_SUBSCRIPTION=projects/e2-dsc/subscriptions/pubsub-sub
+  # worker:
+  #   build: ./b
+  #   command: python /app/api/worker.py
+  #   volumes:
+  #     - ./b:/app
+  #   environment:
+  #     - GOOGLE_APPLICATION_CREDENTIALS=/app/proyecto-desarrollo-cloud.json
+  #     - GOOGLE_CLOUD_PROJECT=e2-esc
+  #     - PUBSUB_TOPIC=projects/e2-dsc/subscriptions/pubsub-sub
+  #     - PUBSUB_SUBSCRIPTION=projects/e2-dsc/subscriptions/pubsub-sub
 
