@@ -2,8 +2,9 @@ version: "3.3"
 services:
   backend-worker:
     build: ./b
-    command: uvicorn api.main:app --host 0.0.0.0 --reload &
-      python /app/api/worker.py
+    command: >
+      bash -c "uvicorn api.main:app --host 0.0.0.0 --reload & 
+                python /app/api/worker.py"
     volumes:
       - ./b:/app
     ports:
