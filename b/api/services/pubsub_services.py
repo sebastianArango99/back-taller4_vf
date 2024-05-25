@@ -1,9 +1,9 @@
 import json
 from google.cloud import pubsub_v1
 
-PROJECT_ID = "e2-dsc"
-TOPIC_ID = "pubsub"
-SUBSCRIPTION_ID = "pubsub-sub"
+PROJECT_ID = "proyecto-desarrollo-cloud"
+TOPIC_ID = "ejemplo123"
+SUBSCRIPTION_ID = "ejemplo123-sub"
 
 publisher = pubsub_v1.PublisherClient()
 subscriber = pubsub_v1.SubscriberClient()
