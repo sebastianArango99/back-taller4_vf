@@ -16,7 +16,7 @@ publisher = pubsub_v1.PublisherClient()
 subscriber = pubsub_v1.SubscriberClient()
 
 # Define Pub/Sub topic and subscription names
-TOPIC_NAME = "pubsub"
+TOPIC_NAME = "ejemplo123"
 PROJECT_ID = "proyecto-desarrollo-cloud"
 SUBSCRIPTION_NAME = "ejemplo123-sub"
 topic_path = publisher.topic_path(PROJECT_ID, TOPIC_NAME)
