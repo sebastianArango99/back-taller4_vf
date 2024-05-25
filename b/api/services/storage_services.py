@@ -5,7 +5,7 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 credentials_path = os.path.join(dir_path, "..", "..", "proyecto-desarrollo-cloud.json")
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = os.path.abspath(credentials_path)
 
-BUCKET_NAME = "e3-bucket"
+BUCKET_NAME = "archivos_desarrollo_cloud"
 
 
 class StorageService:
