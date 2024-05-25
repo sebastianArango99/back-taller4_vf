@@ -11,9 +11,10 @@ services:
       - "8000:8000"
     environment:
       - GOOGLE_APPLICATION_CREDENTIALS=/app/proyecto-desarrollo-cloud.json
-      - GOOGLE_CLOUD_PROJECT=e2-esc
-      - PUBSUB_TOPIC=projects/e2-dsc/subscriptions/pubsub-sub
-      - PUBSUB_SUBSCRIPTION=projects/e2-dsc/subscriptions/pubsub-sub
+      - GOOGLE_CLOUD_PROJECT=proyecto-desarrollo-cloud
+      - PUBSUB_TOPIC=projects/proyecto-desarrollo-cloud/topics/ejemplo123
+      - PUBSUB_SUBSCRIPTION=projects/proyecto-desarrollo-cloud/subscriptions/ejemplo123-sub
+
 
   # worker:
   #   build: ./b
